@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/tv_no_internet_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:gravity="center"
+        android:background="@color/gray_16"
+        android:text="@string/connectivity_loss_error"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:textAllCaps="true"
+        />
+
+    <ImageView
+        android:id="@+id/iv_no_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_below="@id/tv_no_internet_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/no_internet"
+        />
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/iv_no_internet"
+        android:background="@color/gray_16"
+        />
+
+    <TextView
+        android:id="@+id/tv_no_internet_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v_divider"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="@string/no_internet_connection"
+        android:textColor="@color/gray_16"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_no_internet_sub_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_no_internet_message"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="@string/connectivity_loss_message"
+        android:textColor="@color/gray_44"
+        android:textSize="15sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/button_ok"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="@android:string/ok"
+            android:textAllCaps="true"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:background="@drawable/btn_white_pressed"
+            tools:visibility="visible"
+            />
+
+        <Button
+            android:id="@+id/button_retry"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/retry"
+            android:textAllCaps="true"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:background="@drawable/map_button"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

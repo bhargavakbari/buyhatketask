@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BuyHatkeSmsApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="retry">Retry</string>
+    <string name="connectivity_loss_error">Something went wrong</string>
+    <string name="no_internet_connection">No Internet connection</string>
+    <string name="connectivity_loss_message">Please check your internet connection and try again.</string>
+    <string name="search_sms_activity">Search SMS</string>
+    <string name="upload_sms_activity">Upload SMS</string>
+    <string name="send_sms_activity">Send SMS</string>
+
+</resources>
